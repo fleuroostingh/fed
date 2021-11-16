@@ -41,8 +41,8 @@ zonsneeuwbergen.nl
 #### Screenshot(s) van de eerste pagina (small screen): 
 Golden Geier 
 <br/>
-<img src="images/golden_geier_smallscreen.jpg" width="375px" alt="detailpagina van het huis Golden Geier op computerscherm">
-<img src="images/goldengeier.jpg" width="375px" alt="detailpagina van het huis Golden Geier op iPhone 5/SE">
+<img src="images/golden_geier.jpg" width="375px" alt="detailpagina van het huis Golden Geier op computerscherm">
+<img src="images/golden_geier_smallscreen.jpg" width="375px" alt="detailpagina van het huis Golden Geier op iPhone 5/SE">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Beschikbaarheid
