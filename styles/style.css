@@ -1,5 +1,179 @@
-/* CSS Document */
+/* ALGEMEEN */
+
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box; 
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
+:root {
+  --text-color: #35352A;
+  --background-color:#FFF;
+  
+  --accent-color: #FFF;
+  --button-color: linear-gradient(-270deg,#e77b1f,#e65719,#e77b1f);
+  --secondary-background-color: #f5f3eb;
+  
+  --overall-padding: 1em;
+}
+
+body{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-color);
+  text-align: left;
+  background-color: var(--background-color);
+}
+
+main{
+  padding: var(--overall-padding);
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+h1{ 
+  max-width: 95px;
+}
+
+h1 > img{
+  width: auto;
+  max-height: 95px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Oswald', sans-serif;
+}
+
+p{
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+h2{
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+h3{
+  font-size: 1.5em;
+}
+
+
+
+/* HEADER */
+
+header{
+  position: relative;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+header > img:first-child{
+  position: absolute;
+  width: 200%;
+  margin-left: -90px;
+}
+
+header > div:first-of-type{
+  position: absolute;
+  z-index: 9;
+  display: flex;
+  color: var(--accent-color);
+  left: 0;
+  right: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div:nth-of-type(2){
+  position: relative;
+  z-index: 8;
+  color: var(--accent-color);
+  padding: var(--overall-padding);
+  margin-top: 6em;  
+  background-image: linear-gradient(-180deg,rgba(0,0,0,0.19) 42%,
+  rgba(0,0,0,0.75) 95%);
+}
+
+
+header > div:nth-of-type(2) > h2{
+  text-transform: uppercase;
+}
+
+
+
+
+/******** (KOM) IN BEWEGING ********/
+
+section:nth-of-type(2) > div{
+  position: relative;
+
+}
+
+section:nth-of-type(2) > div > h3{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: var(--overall-padding);
+  margin: var(--overall-padding);
+
+  font-size: 14px;
+  letter-spacing: 2.33px;
+  font-weight: 400;
+  font-family: "rubik", sans-serif;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  
+  /* background-image: linear-gradient(-180deg,rgba(0,0,0,0.19) 42%,
+  rgba(0,0,0,0.75) 95%); */
+}
+
+
+/**************************************/
+/******** WAAR ZIJN WE ACTIEF? ********/
+/**************************************/
+
+section:nth-of-type(3) > h2{
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 51px;
+  font-weight: 400;
+}
+
+section:nth-of-type(3) > p{
+  text-align: center;
+  font-size: 19px;
+}
+
+section:nth-of-type(3) > div{
+  position: relative;
+  width: 100vw;
+  margin-left: calc(var(--overall-padding) * -1);
+}
+
+section:nth-of-type(3) > div > div{
+  position: absolute;
+  bottom: var(--overall-padding);
+  left: var(--overall-padding);
+  color: var(--accent-color);
+}
+
+section:nth-of-type(3) > div > div > h3{
+  font-weight: 400;
+  font-family: "rubik", sans-serif;
+}
+
+section:nth-of-type(3) > div > div > p{
+  padding: 0;
+}

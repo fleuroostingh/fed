@@ -36,22 +36,20 @@ surface pane
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-zonsneeuwbergen.nl
+wwf.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-Golden Geier 
-<br/>
-<img src="images/golden_geier.jpg" width="500px" alt="detailpagina van het huis Golden Geier op computerscherm">
-<img src="images/golden_geier_smallscreen.jpg" width="375px" alt="detailpagina van het huis Golden Geier op iPhone 5/SE">
+Bedreigde dieren
+<br/> 
+<img src="images/screenshot_bedreigde_dieren_pagina.png" width="375px" alt="pagina binnen de website over alle bedreigde dieren">
+
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Beschikbaarheid
+De jaguar
 <br/>
-<img src="images/zoek_en_boek.jpg" width="500px" alt="beschikbaarheid bekijken op computerscherm">
-<img src="images/zoek_en_boek_smallscreen.jpg" width="375px" alt="beschikbaarheid bekijken op iPhone 5/SE">
- 
-</details>
+<img src="images/screenshot_jaguar_pagina.png" width="375px" alt="pagina binnen de website over de jaguar">
 
+</details>
 
 
 ## Breakdownschets (week 1)
@@ -82,6 +80,7 @@ Beschikbaarheid
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+<img src="images/website_voortgangsgesprek1.png" width="375px" alt="hoe mijn website er tot nu toe uit ziet">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
