@@ -1,9 +1,12 @@
+/************/
 /* ALGEMEEN */
+/************/
+
 
 *, *::after, *::before {
   box-sizing:border-box; 
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
 }
@@ -15,12 +18,14 @@
   --accent-color: #FFF;
   --button-color: linear-gradient(-270deg,#e77b1f,#e65719,#e77b1f);
   --secondary-background-color: #f5f3eb;
+  --button2-border-color: #e2e0ce;
+  --button2-text-color: #78786f;
   
   --overall-padding: 1em;
 }
 
 body{
-  font-size: 15px;
+  font-size: 1em;
   font-weight: 400;
   line-height: 1.4;
   color: var(--text-color);
@@ -28,82 +33,260 @@ body{
   background-color: var(--background-color);
 }
 
-main{
+/* main{
   padding: var(--overall-padding);
-}
+} */
 
 img{
   width: 100%;
   display: block;
 }
 
-h1{ 
-  max-width: 95px;
-}
-
-h1 > img{
-  width: auto;
-  max-height: 95px;
-}
-
 h1, h2, h3, h4, h5, h6{
   font-family: 'Oswald', sans-serif;
 }
 
-p{
-  line-height: 24px;
-  padding-bottom: 20px;
+h1{ 
+  max-width: 3em;
 }
 
 h2{
   font-size: 2em;
   font-weight: 600;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 1em 0;
 }
 
 h3{
   font-size: 1.5em;
 }
 
+p{
+  padding-bottom: 1.5em;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul{
+	list-style-type: none; 
+}
+
+ul li{
+  padding-left: 1em; 
+	margin-bottom: .5em; 
+}
 
 
+/**********/
 /* HEADER */
+/**********/
 
 header{
   position: relative;
   display: flex;
-  position: relative;
   overflow: hidden;
+  height: 98vh;
 }
 
-header > img:first-child{
+
+/* ACHTERGROND AFBEELDING */
+
+header > img{
   position: absolute;
-  width: 200%;
-  margin-left: -90px;
+  width: 300%;
+  margin-left: -12em;
 }
+
+
+/* LOGO + NAVIGATIE */
 
 header > div:first-of-type{
   position: absolute;
-  z-index: 9;
+  z-index: 2;
   display: flex;
   color: var(--accent-color);
   left: 0;
-  right: 1em;
+  right: 0;
   justify-content: space-between;
   align-items: center;
+  /* position: fixed; */
+  transition: top .5s ease-in;
+  /* box-shadow: 0 2px 30px 0 rgb(0 0 0 / 10%); */
 }
+
+
+/* LOGO */
+
+header > div:first-of-type > h1{
+  position: relative;
+  z-index: 2;
+}
+
+/* NAVIGATIE BUTTON */
+
+nav > button{
+  width: 10em;
+  height: 1.5em;
+  position: absolute;
+  top: 2.5em;
+  right: 1.8em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 4;
+}
+
+/* intersection opserver voor bewegende nav-bar*/
+
+
+/* TEKST "MENU" HAMBURGERMENU */
+
+nav > button > span:first-of-type{
+  text-transform: uppercase;
+  color: var(--accent-color);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  transition: 1s;
+}
+
+
+/* STREEPJES HAMBURGER MENU */
+
+nav > button > span:nth-of-type(n+2){
+  background: var(--background-color);
+  width: 2em;
+  height: 0.2em;
+  position: absolute;
+  right: 0;
+}
+
+nav > button > span:nth-of-type(2){
+  top: 100%;
+  transition: .5s;
+}
+
+nav > button > span:nth-of-type(3){
+  top: 50%;
+}
+
+nav > button > span:last-of-type{
+  top: 0%;
+  transition: .5s;
+} 
+
+
+/* NAVIGATIE DROPDOWN */
+
+nav > aside{
+  background-color: var(--background-color);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: 1s;
+  padding: 1.5em;
+
+  animation-name: dropdown_terug;
+  /* animation-timing-function: cubic-bezier(0.53, -0.57, 0.5, 1.07); */
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+
+nav > aside > ul{
+  margin-top: 6em;
+}
+
+nav > aside > ul > li{
+  line-height: 2.5em;
+}
+
+nav > aside > ul > li:hover{
+  background-color: var(--secondary-background-color);
+}
+
+
+/* CLASSLIST DROPDOWN MENU */
+
+
+
+
+/* nav.transitie_navigatie > aside{
+	transform: translateX(10%);
+  transform: translateX(0%);
+} */
+
+
+
+@keyframes dropdown_heen {
+  0% {
+    transform: translateX(-100%);
+  }
+  80% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes dropdown_terug {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+ 
+nav.transitie_navigatie > aside{
+  animation-name: dropdown_heen;
+  /* animation-timing-function: cubic-bezier(0.53, 0.02, 0.5, 1.33); */
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+} 
+
+nav.transitie_navigatie > button > span:first-of-type{
+  color: var(--text-color);
+}
+
+nav.transitie_navigatie > button > span:nth-of-type(2){
+  transform: translateY(-10px) translateX(0) rotate(45deg);
+  background-color: var(--text-color);
+}
+  
+nav.transitie_navigatie > button > span:nth-of-type(3){
+  opacity: 0;
+}
+
+nav.transitie_navigatie > button > span:nth-of-type(4){
+  transform: translateY(10px) translateX(0) rotate(-45deg);
+  background-color: var(--text-color);
+}
+
+
+/* TEKST OP ACHTERGROND AFBEELDING */
 
 header > div:nth-of-type(2){
   position: relative;
-  z-index: 8;
   color: var(--accent-color);
   padding: var(--overall-padding);
-  margin-top: 6em;  
-  background-image: linear-gradient(-180deg,rgba(0,0,0,0.19) 42%,
+  margin-top: 10em;  
+  background-image: linear-gradient(-180deg,rgba(0,0,0,0) 42%,
   rgba(0,0,0,0.75) 95%);
 }
 
+
+/* H2 VAN TEKST OP ACHTERGOND AFBEELDING */
 
 header > div:nth-of-type(2) > h2{
   text-transform: uppercase;
@@ -112,68 +295,393 @@ header > div:nth-of-type(2) > h2{
 
 
 
-/******** (KOM) IN BEWEGING ********/
+/**************************/
+/* WAT IS ER AAN DE HAND? */
+/**************************/
 
-section:nth-of-type(2) > div{
+main > section:first-of-type{
   position: relative;
-
+  padding: var(--overall-padding);
 }
 
-section:nth-of-type(2) > div > h3{
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: var(--overall-padding);
-  margin: var(--overall-padding);
 
-  font-size: 14px;
-  letter-spacing: 2.33px;
+main > section:first-of-type::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5.86vw;
+  background-image: url(../images/header-bottom.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: calc(-5.86vw + 2px);
+  left: 0;
+  z-index: 0;
+}
+
+
+
+/*********************/
+/* (KOM) IN BEWEGING */
+/*********************/
+
+
+/* BEDREIGDE DIEREN AFBEELDINGEN */
+
+section:nth-of-type(2){
+  padding: var(--overall-padding);
+}
+
+section:nth-of-type(2) > ul > li{
+  position: relative;
+  margin: 0;
+  padding: 0;
+} 
+
+
+
+
+/* BEDREIGDE DIEREN TEKST OP AFBEELDINGEN */
+
+
+section:nth-of-type(2) > ul > li > h3{
+  position: absolute;
+  left: 1.5em;
+  right: 1.5em;
+  bottom: 1.5em;
+
+  font-size: 0.8em;
+  letter-spacing: 0.15em;
   font-weight: 400;
   font-family: "rubik", sans-serif;
   text-transform: uppercase;
   color: var(--accent-color);
-  
-  /* background-image: linear-gradient(-180deg,rgba(0,0,0,0.19) 42%,
-  rgba(0,0,0,0.75) 95%); */
 }
 
 
-/**************************************/
-/******** WAAR ZIJN WE ACTIEF? ********/
-/**************************************/
+
+
+
+/*************************/
+/* WAAR ZIJN WE ACTIEF?  */
+/*************************/
+
+
+/* TEKST (KOP + PARAGRAAF) */
 
 section:nth-of-type(3) > h2{
+  padding: var(--overall-padding);
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5em;
   text-transform: uppercase;
-  line-height: 51px;
   font-weight: 400;
 }
 
 section:nth-of-type(3) > p{
+  padding: var(--overall-padding);
   text-align: center;
-  font-size: 19px;
+  font-size: 1.2em;
 }
 
-section:nth-of-type(3) > div{
+
+/* ACTIEVE GEBIEDEN AFBEELDINGEN */
+
+section:nth-of-type(3) > ul > li{
   position: relative;
+  margin: 0;
+  padding: 0;
   width: 100vw;
-  margin-left: calc(var(--overall-padding) * -1);
-}
+  /* margin-left: calc(var(--overall-padding) * -1); */
+} 
 
-section:nth-of-type(3) > div > div{
+
+/* ACTIEVE GEBIEDEN TEKST OP AFBEELDINGEN */
+
+section:nth-of-type(3) > ul > li > a > h3, section:nth-of-type(3) > ul > li > a > p{
   position: absolute;
-  bottom: var(--overall-padding);
-  left: var(--overall-padding);
+  left: 1.5em;
+  right: 1.5em;
+  text-align: left;
+  
+  font-weight: 400;
+  font-family: "rubik", sans-serif;
   color: var(--accent-color);
 }
 
-section:nth-of-type(3) > div > div > h3{
-  font-weight: 400;
-  font-family: "rubik", sans-serif;
+section:nth-of-type(3) > ul > li > a > h3{
+  bottom: 4em;
+  left: 1em; /* is niet gelijk met de p*/
 }
 
-section:nth-of-type(3) > div > div > p{
+section:nth-of-type(3) > ul > li > a > p{
+  bottom: 1.5em;
   padding: 0;
+}
+
+/* "MEER" BUTTON */
+
+section:nth-of-type(3){
+  text-align: center;
+}
+
+section:nth-of-type(3) > a{
+  display: inline-block;  
+  min-width: 175px;
+  padding: 1.25em;
+  margin: 3.5em;
+
+  border: 1px solid var(--button2-border-color);  
+  border-radius: 2em;
+
+  color: var(--button2-text-color);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--background-color);
+  transition: all .2s ease-out;
+}
+
+
+
+
+
+/*****************/
+/* WAT DOET WWF? */
+/*****************/
+
+
+/* ACHTERGROND AFBEELDING PARENT */
+
+section:nth-of-type(4){
+  position: relative;
+  overflow: hidden;
+  height: 240vh;
+}
+
+
+/* ACHTERGROND AFBEELDING CHILD */
+
+section:nth-of-type(4) > img{
+  position: absolute;
+  top: 0;
+  width: 800%;
+  display: block;
+  margin-left: -100em;
+  padding: 0;
+}
+
+
+/* KOP SECTION */
+
+section:nth-of-type(4) > h2{
+  position: relative;
+  z-index: 5;
+  color: var(--accent-color);
+  font-size: 2.5em;
+  padding: 1em 0 1em 0.4em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* NUMMER 1 2 3 4 ALGEMEEN */
+
+section:nth-of-type(4) > div{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+section:nth-of-type(4) > div > ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section:nth-of-type(4) > div > ul > li{
+  padding-bottom: 10px;
+  padding-left: 70px;
+  position: relative;
+}
+
+section:nth-of-type(4) > div > ul > li > div{
+  align-items: flex-start;
+  display: flex;
+}
+
+
+/* NUMMER 1 2 3 4 LOGO SPECIFIEK ----- KOPIE WWF*/
+
+section:nth-of-type(4) > div > ul > li > div > div{
+  background: rgba(239,237,229,0.7);
+  border-radius: 5em;
+  color: #fff;
+  display: inline-block;
+  font-family: "Rubik",sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 48px;
+  margin-left: -70px;
+  margin-right: 18px;
+  text-align: center;
+  vertical-align: middle;
+  width: 48px;
+}
+
+
+/* NUMMER 1 2 3 4 VERTICAAL LIJNTJE */
+
+section:nth-of-type(4) > div > ul > li:not(:last-of-type) > div::before{
+  background: #fff;
+  content: "";
+  display: inline-block;
+  height: calc(100% - 4.25em);
+  left: 24px;
+  position: absolute;
+  top: 58px;
+  width: 1px;
+}
+
+
+/* NUMMER 1 2 3 4 KOP */
+
+section:nth-of-type(4) > div > ul > li > div > h3{
+  flex: 1;
+  font-family: "Rubik",sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.2em;
+  padding: 10px 0 5px 0;
+  color: var(--accent-color);
+}
+
+
+/* NUMMER 1 2 3 4 PARAGRAAF */
+
+section:nth-of-type(4) > div > ul > li > p{
+  margin-bottom: 5px;
+  padding: 0;
+  color: var(--accent-color);
+}
+
+
+section:nth-of-type(4) > img{
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer{
+  background-color: var(--secondary-background-color);
+  font-family: "Rubik",sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--button2-text-color);
+  position: relative;
+
+}
+
+footer::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1.84vw;
+  background-image: url(../images/footer-top.svg);
+  background-size: cover;
+  position: absolute;
+  top: calc(-1.84vw + 1px);
+  left: 0;
+  z-index: 1;
+}
+
+
+
+footer > section > div > p {
+  font-size: 0.7em;
+  line-height: 1em;
+  color: #9d9d95;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* margin: 6em; */
+  text-align: center;
+}
+
+footer > section > div > ul{
+  text-align: center;
+  display: flex;
+  justify-content: center ;
+}
+
+footer > section > div > ul > li{
+  display: flex; 
+  align-items: center;
+  margin: 0 4px;
+  border: 1px solid var(--button2-border-color);
+  border-radius: 100%;
+  padding: 1em;
+  /* line-height: 50px; */
+}
+
+footer > section > div > ul > li > a{
+  height: 2em;
+  width: 2em;
+}
+
+footer > section > div > ul > li > a > img{
+  width: 26px;
+  text-align: center;
+}
+
+
+/* footer > section > div > ul > li > a{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--button2-border-color);
+  border-radius: 100%;
+  text-align: center;
+  line-height: 60px;
+  margin: 0 10px; */
+/* } */
+
+
+
+
+
+
+/****************/
+/* LEEUW PAGINA */
+/****************/
+
+.leeuw > header{
+  flex-wrap: wrap;
+}
+
+.leeuw > header > img{
+  height: 150vh;
+  width: ;
+}
+
+.leeuw > header > div:nth-of-type(3){
+  z-index: 10;
+}
+
+.leeuw > header > div:nth-of-type(3)> ul li{
+  display: flex;
+  color: var(--accent-color);
+}
+
+.leeuw > header > div:nth-of-type(3) > ul > li > img{
+  width: 2em;
 }
