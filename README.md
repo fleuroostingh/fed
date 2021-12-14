@@ -84,11 +84,21 @@ website er tot nu toe uit ziet">
 
 ### Agenda voor meeting
 
-| Anneke Steller | Fleur Oostingh     | Max van Liempdt | Zoë Reijinga     | Aris Rosbach     | 
-| ---            | ---                | ---             | ---              | ---              |
-| Loopt achter   | Wanneer gebruik je | Niks te         | Hoe kan ik het   | Moeite met een   |
-| Ga ik het      | wel en geen divjes?| bespreken       | beste een zoek-  | bepaalde margin  |
-| redden?        |                    |                 | balk maken?      |                  |
+
+#### Anneke Steller
+Loopt achter en vraagt zich af of ze het gaat redden --> extra aandacht.
+
+#### Max van Liempdt
+Niks te bespreken.
+
+#### Zoë Reijinga
+Hoe kan ik het beste een zoekbalk maken?
+
+#### Aris Rosbach
+Heeft moeite met een bepaalde margin en wil daar samen naar kijken. 
+
+#### Ik 
+Wanneer gebruik ik nou wel en geen divjes?
 
 
 ### Verslag van meeting
@@ -120,11 +130,18 @@ pagina aangemaakt, maar daar staat nu nog de styling op van de index pagina.
 
 ### Agenda voor meeting
 
-| Sofie Berger              | Fleur Oostingh     | Romy-Thu Zwijnenburg    | Hidde van der Plaat   |
-| ---                       | ---                | ---                     | ---                   |
-| hamburgermenu is kwijt    |                    | en ik dit               | hamburgermenu         |
-| hoe zet ik img in form    |                    | nog een punt            | lukt qua styling niet |
-|                           |                    | ...                     | in huisstijl Tony     |
+#### Sofie Berger  
+Het hamburgermenu is weer eens verdwenen op de tweede pagina.
+Hoe zet ik een image in een inputveld van een formulier?
+
+#### Romy-Thy Zwijnenburg
+Niks te bespreken.
+
+#### Hidde van der Plaat
+Hamburgermenu lukt qua styling niet in de huisstijl van Tony.
+
+#### Ik
+De animatie in mijn menu herhaalt zich ook als ik niet op de button klik. 
 
 
 ### Verslag van meeting
@@ -149,28 +166,36 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Peripheral field loss bril
+De witte button van het hamburgermenu valt niet zo goed op op de achtergrond.
+De h3 "Walvis" is niet zo goed te lezen door het lage contrast met de afbeelding.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Door een donkerdere overlay te creëren op de afbeelding valt de witte tekst meer op.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Low contrast bril 
+De footer tekst is niet zo fijn te lezen met dit contrast. 
+Ook de "meer >" knop op de index pagina kan wat duidelijker.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Wederom door een donkerdere overlay toe te voegen zal het contrast verhoogd worden.
+De kleuren op de voorgrond wat donkerder maken kan ook werken.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Blur / glare bril 
+De footer is niet goed te lezen. 
+Het hamburgermenu is heel slecht te zien.
+Border van de "Meer >" button is niet goed te zien. 
+Sommige witte tekst op de foto's is lastig te zien. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Wederom: hogere contrasten = key.
+
+
+#### Terror apparaat
+Het is iets lastiger om je laptop te controleren, maar bij mij werkte het nog 
+best wel goed. De afbeeldingen die linkjes zijn, zijn dus groot genoeg. Dit geldt
+ook voor de linkjes die er als buttons uitzien. 
+
+Er hoeft hier niks aangepast te worden. 
 
 </details>
 
@@ -184,26 +209,37 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb nu het gevoel dat ik een beetje langzaam door aan het werken ben. Er gaat
+veel tijd zitten in dingen die nog niet zo belangrijk zijn, waardoor het grote 
+geheel nog niet zo opschiet. Ik heb samen met Midas en Vasilis het probleem van mijn repeterende animatie op weten te lossen, dus dat is heel fijn! Verder ben ik bezig met de tweede pagina, maar vind ik het lastig om te kiezen wat ik wel en niet over wil nemen van de originele site. 
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+
+#### Sofie Berger
+Inhoud van articles flext naast elkaar ipv onder elkaar. 
+
+#### Romy-Thu Zwijnenberg
+Logo in de header wilt niet in het midden komen te staan.
+Een afbeelding is kleiner dan de andere.
+Hoe kan ik meer de onderkant van een foto laten zien?
+
+#### Hidde van der Plaat
+Is bezig met responsive maken van site. Geen vragen
+
+#### Ik
+Padding / margin in footer werkt niet zoals ik wil. 
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Ik moet niet zo dom doen met padding en margin, want het werkte wel gewoon wanneer ik het goed deed!
+- Hoogte van de foto's van Romy is onbekend, plaatsing van foto is wel opgelost.
+- Hidde moet iets meer doen aan z'n responsiveness.
+- Sofie kon flex-direction: column gebruiken en dan is het opgelost. 
 
 </details>
 
@@ -217,12 +253,16 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+
+Het was nog best even doorwerken om alles netjes af te krijgen. Ik ben wel tevreden over het resultaat. Ik had graag nog wat meer animaties toe willen voegen om het iets spannender te maken, maar daar had ik helaas niet genoeg tijd voor. Het bedenken van de states vond ik best lastig. 
+
+Over het algemeen ging het vrij goed. Ik had veel pieken wanneer er dingen lukten zoals ik wilde. Af en toe had ik wel wat struggles, maar het viel mee. Ik ben ook blij dat ik meerdere klasgenoten heb kunnen helpen met hun hamburgermenu.
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="images/website_eindresultaat_dieren.png" width="375px" alt="eindresultaat van mijn index pagina">
 
+<img src="images/website_eindresultaat_leeuw.png" width="375px" alt="eindresultaat van mijn tweede pagina">
 </details>
 
 
@@ -231,13 +271,19 @@ hier screenshot(s) van je eindresultaat
 
 ## Bronnenlijst
 
-<details open>
+<details>
 <summary>continu bijhouden terwijl je werkt</summary>
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. oefening animaties - dlo.mijnhva.nl
+2. https://www.wwf.nl/dieren 
+3. https://www.wwf.nl/dieren/leeuw 
+4. https://css-tricks.com/having-a-little-fun-with-custom-focus-styles/ 
+5. https://www.w3schools.com/css/css_text_shadow.asp
+6. https://www.youtube.com/watch?v=exb2ab72Xhs
+7. https://www.youtube.com/watch?v=JEBgqbZWYIQ
+8. https://css-tricks.com/how-to-make-a-css-only-carousel/
+
 
 </details>
