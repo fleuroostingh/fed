@@ -180,6 +180,8 @@ Ook de "meer >" knop op de index pagina kan wat duidelijker.
 Wederom door een donkerdere overlay toe te voegen zal het contrast verhoogd worden.
 De kleuren op de voorgrond wat donkerder maken kan ook werken.
 
+<img src="images/toegankelijkheidtest.jpeg" width="375px" alt="ik wanneer ik een bril aan het testen ben">
+
 
 #### Blur / glare bril 
 De footer is niet goed te lezen. 
@@ -196,6 +198,8 @@ best wel goed. De afbeeldingen die linkjes zijn, zijn dus groot genoeg. Dit geld
 ook voor de linkjes die er als buttons uitzien. 
 
 Er hoeft hier niks aangepast te worden. 
+
+
 
 </details>
 
