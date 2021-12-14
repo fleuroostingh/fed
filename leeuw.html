@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="nl">
+<html lang="nl" class="loading">
 	
 <head>
 	<meta charset="UTF-8">
@@ -9,7 +9,7 @@
 	<title>Leeuw | WWF | Slechts 8% leefgebied over, steun ons</title>
 	
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/jpeg" href="images/logo.svg">
+	<link rel="icon" type="image/jpeg" href="images/favicon-96x96.jpg">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;
@@ -46,27 +46,30 @@
 		</div>
 
 		<div> <!--div 2-->
-			<h2>Het aantal leeuwen is met 40% gedaald</h2>
-			<p>
-				Ook deze krachtige en majestueuze grote kat, ook wel de koning 
-                van de dieren genoemd, heeft het niet makkelijk!
-			</p>
+			<div> <!--div 2.1-->
+				<h2>Het aantal leeuwen is met 40% gedaald</h2>
+				<p>
+					Ook deze krachtige en majestueuze grote kat, ook wel de koning 
+					van de dieren genoemd, heeft het niet makkelijk!
+				</p>
+			</div>
+			
+			<div> <!--div 2.2-->
+				<ul>
+					<li><img src="images/locatie_icon.png" alt=""> Locatie: Afrika</li>
+					<li><img src="images/aantal_leeuwen_icon.png" alt="">Ongeveer
+					20.000 wilde leeuwen</li>
+					<li><img src="images/locatie_icon.png" alt="">Slechts 8% van het 
+					leefgebied over</li>
+				</ul>
+			</div>
 		</div>
 		
-		<div> <!--div 3-->
-			<ul>
-				<li><img src="images/locatie_icon.png" alt=""> Locatie: Afrika</li>
-				<li><img src="images/aantal_leeuwen_icon.png" alt="">Ongeveer
-				20.000 wilde leeuwen</li>
-				<li><img src="images/locatie_icon.png" alt="">Slechts 8% van het 
-				leefgebied over</li>
-			</ul>
-		</div>
 		
 	</header>
 	<main>
 	    
-		<section> <!-- section 1 --> <!--article ipv section-->
+		<section class="animate"> <!-- section 1 --> <!--article ipv section-->
 			<h2>Wat is er aan de hand?</h2>
 			<p>
 				Rond het begin van de jaartelling had de leeuw een veel grotere 
@@ -78,7 +81,7 @@
                 medicijnen te verwerken.
 			</p>
 		</section>
-		<section> <!-- section 2 -->
+		<section class="animate"> <!-- section 2 -->
 			<h2>Waarom is het belangrijk om de leeuw te beschermen?</h2>
 			<p>
 				Grote katachtigen zoals de tijger, de leeuw, de jaguar en de 
@@ -90,86 +93,163 @@
                 te groot worden waardoor er overbegrazing zou zijn en andere 
                 dieren in de knel komen.
 			</p>
-
-			<!-- <ul>
-				<li><a href=""><img src="images/bedreigde_dieren_jaguar.jpg" 
-					alt=""></a>Jaguar</li>
-			</ul> -->
-
-			<img src="images/drie_leeuwen.jpg" alt="">
-            <p>
-                Van het gebied dat de leeuwen ooit tot hun beschikking hadden is 
-                nog maar 8% over. Dit betekent dat de leeuwen kleinere gebieden 
-                hebben om te leven en jagen.
-            </p>
 		</section>
 		
-		<section> <!-- section 3 -->
-			<h2>Waar zijn we actief?</h2>
-			<p>WWF is op meer dan 130 plekken in de wereld actief</p>
+		<section class="animate"> <!-- section 3 -->
+			<ul>
+				<li>
+					<img src="images/leeuw_caroussel_1.jpg" alt="">
+				</li>
+				<li>
+					<img src="images/leeuw_caroussel_2.jpg" alt="">
+				</li>
+				<li>
+					<img src="images/leeuw_caroussel_3.jpg" alt="">
+				</li>
+				<li>
+					<img src="images/leeuw_caroussel_4.jpg" alt="">
+				</li>
+				<li>
+					<img src="images/leeuw_caroussel_5.jpg" alt="">
+				</li>
+				<li>
+					<img src="images/leeuw_caroussel_6.jpg" alt="">
+				</li>
 
-			<div>
-				<a href="index.html">
-					<img src="images/amazone.jpg" alt="">
-				</a>
-				<div>
-					<h3>Amazone</h3>
-					<p>Het Amazonegebied gonst het hele jaar door van het meest
-					exotische leven.
-					</p>
-				</div>
-			</div>
-
-			<div>
-				<a href="index.html">
-					<img src="images/tropisch_afrika.jpg" alt="">
-				</a>
-				<div>
-					<h3>Tropisch Afrika</h3>
-					<p>Het Congobekken wordt vaak het Groene Hart van Afrika 
-						genoemd, waar veel dieren leven.
-					</p>
-				</div>
-			</div>
-			
-			<div>
-				<a href="index.html">
-					<img src="images/noordpool.jpg" alt="">
-				</a>
-				<div>
-					<h3>Noordpool</h3>
-					<p>Een bevroren oceaan is het ruige leefgebied van de 
-						ijsbeer, de narwal en de walrus.
-					</p>
-				</div>
-			</div>
-			
-			<div>
-				<a href="index.html">
-					<img src="images/zuidelijk_afrika.jpg" alt="">
-				</a>
-				<div>
-					<h3>Zuidelijk Afrika</h3>
-					<p>In het stroomgebied van de Zambezi komen overweldigende 
-						natuurverschijnselen voor.
-					</p>
-				</div>
-			</div>
-
-			<a href="index.html"Meer></a>
+			</ul>
 			
 		</section>
+		
+		<section class="animate">
+			<h2>Eenmalige gift</h2>
+			<form>
+				<div>
+					<div>
+						<input type="radio" name="bedrag" id="10_euro" value="10">
+						<label for="10_euro">10</label>
+					</div>
+					<div>
+						<input type="radio" name="bedrag" id="25_euro" value="25">
+						<label for="25_euro">25</label>
+					</div>
+					<div>
+						<input type="radio" name="bedrag" id="35_euro" value="35">
+						<label for="35_euro">35</label>
+					</div>
+				</div>
+				<div>
+					<input type="radio" name="bedrag" id="anders1" value="">
+                	<label for="anders">
+                		<input type="text" name="bedrag_anders" id="anders" value="" 
+						placeholder="&euro; 0.00">
+                	</label>
+				</div>
+				
+				<label for="voornaam">Voornaam</label>
+				<input type="text" name="naam" id="voornaam" value="" 
+				placeholder="John" required>
+				<label for="voornaam">Tussenvoegsel</label>
+				<input type="text" name="naam" id="tussenvoegsel" value="" 
+				placeholder="van der" required>
+				<label for="voornaam">Achternaam</label>
+				<input type="text" name="naam" id="achternaam" value="" 
+				placeholder="Vaart" required>
+				
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" value="" placeholder="johnvdvaart@hotmail.com" required>
 
-		<section>
-			<img src="images/wat_doet_wwf.jpg" alt="">
-			<h2>Wat doet WWF?</h2>
+				<label for="geboortedatum">Geboortedatum</label>
+				<input type="date" name="geboortedatum" id="geboortedatum" value="" required>
 
-			
+				<label for="telefoonnummer">Telefoonnummer</label>
+				<input type="number" name="telefoonnummer" id="telefoonnummer" value="" placeholder="0612345678">
+
+				<div>
+					<input type="checkbox" name="nieuwsbrief" id="nieuwsbrief" value="">				
+					<label for="nieuwsbrief">Ja, ik ontvang graag het laatste 
+						natuurnieuws, duurzame tips en acties in mijn inbox (inschrijven)
+						mag vanaf 16 jaar).
+					</label>
+				</div>
+				
+				<div>
+					<input type="checkbox" name="telefonisch_contact" id="telefonisch_contact" value="">				
+					<label for="nieuwsbrief">Ja, WWF mag mij ook telefonisch benaderen.</label>
+				</div>
+				
+
+				<input type="submit" name="inleveren" id="inleveren" value="Ja, ik geef">
+			</form>
 		</section>
+
 
 	</main>
-	<footer>
+	<footer class="animate">
+		<section> <!--section 5-->
+			<div>
+				<p>Volg WWF ook op social media</p>
+				<ul>
+					<li>
+						<a href="leeuw.html">
+							<img src="images/facebook_logo.png" alt="">
+						</a>
+					</li>
 
+					<li>
+						<a href="leeuw.html">
+							<img src="images/twitter_logo.png" alt="">
+						</a>
+					</li>
+
+					<li>
+						<a href="leeuw.html">
+							<img src="images/instagram_logo.png" alt="">
+						</a>
+					</li>
+
+					<li>
+						<a href="leeuw.html">
+							<img src="images/linkedin_logo.png" alt="">
+						</a>
+					</li>
+
+					<li>
+						<a href="leeuw.html">
+							<img src="images/youtube_logo.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<ul>
+				<li>
+					<a href="leeuw.html">Kom in actie &gt;</a>
+				</li>
+				<li>
+					<a href="leeuw.html">Wat we doen &gt;</a>
+				</li>
+				<li>
+					<a href="leeuw.html">Over WWF &gt;</a>
+				</li>
+				<li>
+					<a href="leeuw.html">Contact &gt;</a>
+				</li>
+			</ul>
+		</section>
+	
+		<section>
+			<h2>Over ons</h2>
+			<p>
+				WWF-NL is onderdeel van het internationale WWF en de afgelopen 
+				decennia uitgegroeid tot een wereldwijd netwerk van 
+				natuurbeschermers, lokale bevolking, regeringen, het 
+				bedrijfsleven, donateurs en vrijwilligers. Mensen met dezelfde 
+				passie voor de natuur en de wilskracht om deze te beschermen. 
+				Onze missie is even uitdagend als helder: werken aan een wereld 
+				waarin de mens leeft in harmonie met de natuur. Een vitale en 
+				veerkrachtige natuur, die we vol trots kunnen doorgeven aan de 
+				generaties na ons.
+			</p>
+		</section>
 	</footer>
 
 
